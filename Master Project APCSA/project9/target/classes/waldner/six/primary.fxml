@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="createaccountANCHORPANE1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.61" prefHeight="672.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="waldner.six.controllers.PrimaryController">
+   <children>
+      <Label id="createaccountLBL1" alignment="CENTER" contentDisplay="CENTER" layoutX="171.0" layoutY="27.0" text="Create Account" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="72.0" />
+         </font>
+      </Label>
+      <Label id="personidLBL1" layoutX="64.0" layoutY="138.0" text="Id:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="usernameLBL1" layoutX="57.0" layoutY="174.0" text="Username:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="passwordLBL1" layoutX="60.0" layoutY="212.0" text="Password:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="emailLBL1" layoutX="61.0" layoutY="253.0" text="Email:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="firstnameLBL1" layoutX="61.0" layoutY="295.0" text="First Name:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="lastnameLBL1" layoutX="62.0" layoutY="337.0" text="Last Name:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="birthdateLBL1" layoutX="64.0" layoutY="381.0" text="Birth Date:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="networthLBL1" layoutX="55.0" layoutY="425.0" text="Net Worth:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="incomeLBL1" layoutX="64.0" layoutY="467.0" text="Income:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="yearlysavingsgoalLBL1" layoutX="58.0" layoutY="502.0" text="Yearly Savings Goal:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="monthlybudgetLBL1" layoutX="60.0" layoutY="549.0" text="Monthly Budget:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="personidENTRY1" disable="true" layoutX="121.0" layoutY="143.0" />
+      <TextField fx:id="usernameENTRY1" layoutX="195.0" layoutY="179.0" promptText="Ex: AlexRoth72" />
+      <TextField fx:id="passwordENTRY1" layoutX="181.0" layoutY="217.0" promptText="Ex: 123456" />
+      <TextField fx:id="emailENTRY1" layoutX="163.0" layoutY="258.0" promptText="Ex: JohnJohn@gmailcom" />
+      <TextField fx:id="firstnameENTRY1" layoutX="195.0" layoutY="300.0" promptText="Ex: Gabriel" />
+      <TextField fx:id="lastnameENTRY1" layoutX="188.0" layoutY="342.0" promptText="Ex: Smith" />
+      <TextField fx:id="networthENTRY1" layoutX="181.0" layoutY="430.0" promptText="Ex: $1" />
+      <TextField fx:id="incomeENTRY1" layoutX="163.0" layoutY="472.0" promptText="Ex: $1000000000" />
+      <TextField fx:id="yearlysavingsgoalENTRY1" layoutX="279.0" layoutY="507.0" promptText="Ex: $50" />
+      <TextField fx:id="monthlybudgetENTRY1" layoutX="249.0" layoutY="554.0" promptText="Ex: $200" />
+      <Button fx:id="createBTN1" layoutX="599.0" layoutY="137.0" mnemonicParsing="false" onAction="#createUser" text="cREATe" />
+      <Button fx:id="clearstuffBTN1" layoutX="603.0" layoutY="300.0" mnemonicParsing="false" onAction="#clearPrimaryFields" text="Clear Stuff" />
+      <Button fx:id="gotologinBTN1" layoutX="599.0" layoutY="354.0" mnemonicParsing="false" onAction="#goToSecondary" text="go to log in" />
+      <Button fx:id="quitappBTN1" layoutX="607.0" layoutY="398.0" mnemonicParsing="false" onAction="#quitApp" text="Quit App" />
+      <DatePicker fx:id="birthdateENTRY1" layoutX="182.0" layoutY="386.0" promptText="Ex: 1/2/23" />
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.shape.Cylinder?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="loginANCHORPANE2" opacity="0.84" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="waldner.six.controllers.SecondaryController">
+   <children>
+      <Label id="login!LBL2" layoutX="399.0" layoutY="47.0" opacity="0.4" text="Login!" textAlignment="CENTER" textFill="#862323">
+         <font>
+            <Font name="Algerian" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameENTRY2" layoutX="231.0" layoutY="261.0" prefHeight="64.0" prefWidth="497.0" promptText="EX: Joe12Joe">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="passwordENTRY2" layoutX="231.0" layoutY="469.0" prefHeight="71.0" prefWidth="497.0" promptText="Ex: 123456">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="usernameLBL2" layoutX="237.0" layoutY="184.0" prefHeight="71.0" prefWidth="132.0" text="Username">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLBL2" layoutX="237.0" layoutY="410.0" prefHeight="49.0" prefWidth="171.0" text="Password">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Arc fill="#70ff1f" layoutX="125.0" layoutY="293.0" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <QuadCurve controlX="4.0" controlY="242.0" endX="50.0" fill="#1fffa3" layoutX="909.0" layoutY="270.0" startX="-50.0" stroke="BLACK" strokeType="INSIDE" />
+      <Sphere cullFace="NONE" layoutX="93.0" layoutY="578.0" radius="50" />
+      <Cylinder height="100" layoutX="878.0" layoutY="590.0" radius="20" />
+      <Box depth="100" drawMode="LINE" height="100" layoutX="746.0" layoutY="87.0" width="100" />
+      <Button fx:id="signinBTN2" layoutX="281.0" layoutY="590.0" mnemonicParsing="false"  prefHeight="49.0" prefWidth="84.0" text="Sign in" onAction="#signIn" />
+      <Button fx:id="createanaccountBTN2" layoutX="484.0" layoutY="590.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="132.0" text="Create an account" onAction="#goToPrimary" />
+   </children>
+   <effect>
+      <SepiaTone level="0.24" />
+   </effect>
+</AnchorPane>
